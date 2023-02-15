@@ -1,0 +1,112 @@
+* {
+  font-family: "Playfair Display";
+}
+
+.todo__list {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px 50px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: darkgray;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.header-btn {
+  background-color: cadetblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 90px;
+}
+.tasksInput {
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.tasksList {
+  padding: 0;
+  list-style-type: none;
+}
+.task {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: darkgrey;
+}
+.taskText {
+  width: 60%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.complete {
+  background-color: #8bc34a !important;
+  text-decoration: line-through;
+}
+.completeTask img,
+.deleteTask img {
+  pointer-events: none;
+  width: 15px;
+}
+.completeTask,
+.deleteTask {
+  background-color: cadetblue;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.right_task {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  width: 30%;
+}
+.left_task {
+  display: flex;
+  width: 70%;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.header input[type="submit"]:hover,
+.deleteTask:hover {
+  background-color: brown;
+  transition: 1s;
+}
+.header button:hover,
+.completeTask:hover {
+  background-color: rgb(36, 181, 36);
+  transition: 1s;
+}
+.right_task input[type="text"] {
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+.editTask {
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: cadetblue;
+}
+
+.editTask:hover {
+  background-color: crimson;
+  transition: 1s;
+}
+.editTaskComplete:hover {
+  background-color: #8bc34a !important;
+}
